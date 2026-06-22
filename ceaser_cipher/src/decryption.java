@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class decryption {
 
-
+    // Method for Decryption
     public static String decrypt(String text, int shift) {
         StringBuilder result = new StringBuilder();
 
@@ -27,7 +27,7 @@ public class decryption {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the encrypted message: ");
+        System.out.print("Enter the Decrypted message: ");
         String encryptedMessage = sc.nextLine();
 
         System.out.print("Enter the shift value: ");
@@ -35,8 +35,8 @@ public class decryption {
 
         String plainText = decrypt(encryptedMessage, shift);
 
-        System.out.println("Encrypted Message: " + encryptedMessage);
-        System.out.println("Decrypted Message: " + plainText);
+        System.out.println("Decrypted Message: " + encryptedMessage);
+        System.out.println("Encrypted Message: " + plainText);
 
         sc.close();
     }
